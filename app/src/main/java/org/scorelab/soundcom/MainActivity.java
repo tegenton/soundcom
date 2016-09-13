@@ -40,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
         myAudioRec.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
         myAudioRec.setAudioEncoder(MediaRecorder.OutputFormat.AMR_NB);
         myAudioRec.setOutputFile(outFile);
-
+        
+        //record activity
         record.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             });
+        
         //stop activity
         stop.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -75,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Audio recorded successfully",Toast.LENGTH_LONG).show();
             }
         });
+        
         //play activity
         play.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -83,17 +86,13 @@ public class MainActivity extends AppCompatActivity {
 
                 try {
                     m.setDataSource(outFile);
-                }
-
-                catch (IOException e) {
+                }catch (IOException e) {
                     e.printStackTrace();
                 }
 
                 try {
                     m.prepare();
-                }
-
-                catch (IOException e) {
+                }catch (IOException e) {
                     e.printStackTrace();
                 }
 
@@ -102,27 +101,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    //not work
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.menu_main, menu);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        // Handle action bar item clicks here. The action bar will
-//        // automatically handle clicks on the Home/Up button, so long
-//        // as you specify a parent activity in AndroidManifest.xml.
-//
-//        int id = item.getItemId();
-//
-//        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
 
 }
