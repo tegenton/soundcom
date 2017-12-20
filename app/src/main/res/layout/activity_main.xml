@@ -7,45 +7,170 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#673ab7"
     tools:context="org.scorelab.soundcom.MainActivity">
 <!--img btn-->
-    <ImageButton
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:id="@+id/button1"
-        android:background="@drawable/oval"
-        android:src="@drawable/ic_record"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="startMethod"/>
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageViewScore"
+        android:src="@mipmap/menu"
+        android:layout_above="@+id/imageButtonStart"
+        />
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageViewScore"
+        android:src="@mipmap/soundcomlogo2"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="203dp"
+        android:layout_marginLeft="50dp"
+        android:layout_above="@+id/imageButtonStart"
+         />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:background="#fff"
+        android:layout_marginTop="101dp"
+        />
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:text="10:03"
+        android:textColor="#673ab7"
+        android:textSize="50dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="18dp"
+        />
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:text="Meeting with Dave"
+        android:textColor="#673ab7"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="24dp"
+        />
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:text="When i met Dave yesterday regarding the business plan"
+        android:textColor="#673ab7"
+        android:textSize="12dp"
+        android:textStyle="normal"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="24dp"
+        />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:background="#fff"
+        android:layout_marginTop="101dp"
+        />
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:text="10:03"
+        android:textColor="#673ab7"
+        android:textSize="50dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="18dp"
+        />
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:text="Meeting with Dave"
+        android:textColor="#673ab7"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="24dp"
+        />
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:text="When i met Dave yesterday regarding the business plan"
+        android:textColor="#673ab7"
+        android:textSize="12dp"
+        android:textStyle="normal"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="24dp"
+        />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:background="#fff"
+        android:layout_marginTop="101dp"
+        android:layout_marginLeft="320dp"
+        />
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:text="1:01"
+        android:textColor="#673ab7"
+        android:textSize="50dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="338dp"
+        />
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:text="Lectur"
+        android:textColor="#673ab7"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="340dp"
+        />
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:text="When i"
+        android:textColor="#673ab7"
+        android:textSize="12dp"
+        android:textStyle="normal"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="340dp"
+        />
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:text="0:42"
+        android:textSize="50dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="135dp"
+    />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="220dp"
+        android:src="@mipmap/play"
+        />
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:text="My Meeting"
+        android:textSize="20dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="135dp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="400dp"
+        android:src="@mipmap/beats"
+        />
 
     <ImageButton
-        android:layout_width="65dp"
-        android:layout_height="65dp"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
         android:id="@+id/imageButtonStop"
-        android:background="@drawable/oval"
-        android:src="@mipmap/ic_stop"
+        android:background="none"
+        android:src="@mipmap/mike"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
-    <ImageButton
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:id="@+id/imageButtonPlay"
-        android:background="@drawable/oval"
-        android:src="@mipmap/ic_playnew"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <ImageView
-        android:layout_width="1000dp"
-        android:layout_height="500dp"
-        android:id="@+id/imageViewScore"
-        android:src="@mipmap/ic_scorelab"
-        android:layout_marginBottom="203dp"
-        android:layout_above="@+id/imageButtonStart"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
 </RelativeLayout>
