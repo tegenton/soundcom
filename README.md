@@ -24,7 +24,7 @@
 
 - Fork the repository by clicking on the Fork icon at the top right corner of the repository page.
 - Clone the repository on to your local machine by running the following commands on git:
-- `git clone git clone https://github.com/[YOUR-USERNAME]/soundcom.git` Refer to [forking](https://help.github.com/articles/fork-a-repo/) and [cloning](https://help.github.com/articles/cloning-a-repository/) in git if you are stuck somewhere.
+- `git clone https://github.com/[YOUR-USERNAME]/soundcom.git` Refer to [forking](https://help.github.com/articles/fork-a-repo/) and [cloning](https://help.github.com/articles/cloning-a-repository/) in git if you are stuck somewhere.
 - Download and install Android Studio which is an IDE for android application development.
 - You will also need to download the Android SDK from the IDE itself.
 
