@@ -51,5 +51,6 @@ By running a virtual device.
 
 Then running the application by clicking on Run on the Android Studio tool bar, or Shift + F10 and then choose the newly created virtual device to run the app.
 
+After following either of these methods, the app should look like this:
 
-
+<img src="Screenshot.png" width="200">
